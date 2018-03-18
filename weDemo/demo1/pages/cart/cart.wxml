@@ -1,0 +1,33 @@
+<wxs module="getPrice">
+  var getPrice = function(num,price) {
+    var p=(num*price).toFixed(2)
+    return p
+  }
+  module.exports.getPrice = getPrice;
+</wxs>
+<view class='cart-list' wx:for="{{cart}}" wx:key="{{index}}">
+  <icon wx:if="{{item.selected}}" type='success' color='red' data-index="{{index}}" bindtap="chageSelect"></icon>
+  <icon wx:else type='circle' color='#fff' data-index="{{index}}" bindtap='chageSelect' color='#e9e9e9'></icon> 
+  <image class='item-image' src="{{item.image}}"></image>
+  <view class='item-info'>
+    <view class='item-child'>
+      <view>{{item.title}}</view>
+      <view>$ {{getPrice.getPrice(item.num,item.price)}}</view>
+    </view>
+    <view class='item-child'>
+      <view class='count-box'>
+        <text class="cart-count-down" bindtap="minusCount" data-index="{{index}}" bindtap="minusCount">-</text>
+        <text class="cart-count-num">{{item.num}}</text>
+        <text class="cart-count-add" bindtap="addCount" data-index="{{index}}" bindtap="addCount">+</text>
+      </view>
+      <view class='close' data-index="{{index}}" bindtap='deleteItem'>X</view>
+    </view>
+  </view>
+</view>
+<view class="cart-foot">
+  <icon wx:if="{{selectAll}}" type='success_circle' color='#fff'  bindtap='chageSelectAll'></icon>
+  <icon wx:else type='circle' color='#fff' bindtap='chageSelectAll'></icon> 
+  <text class='all'>全选</text>
+  <text class='price'>$ {{totalPrice}}</text>
+  <text class='to-oeder'>去结算</text>
+</view>

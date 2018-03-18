@@ -1,0 +1,9 @@
+<!--pages/address/address.wxml-->
+
+<view class='address-list'>
+  <input class="list-item" placeholder='输入姓名' value='{{address.name}}' bindinput="bindName" data-name="address.name"></input>
+  <input class="list-item" placeholder='输入手机' value='{{address.phone}}' bindinput="bindPhone" data-name="address.phone"></input>
+  <input class="list-item" placeholder='输入地址' value='{{address.detail}}' bindinput="bindDetail" data-name="address.detail"></input>
+  
+  <button bindtap='onSave'>保存</button>
+</view> 

@@ -1,0 +1,76 @@
+/*浏览器默认样式*/
+
+/*1、页边距*/
+/*IE默认为10px，通过body的margin属性设置*/
+/*FF默认为8px，通过body的padding属性设置*/
+/*要清除页边距一定要清除这两个属性值*/
+
+ body {
+margin:0;
+padding:0;
+}
+
+/*2、段间距*/
+/*IE默认为19px，通过p的margin-top属性设置*/
+/*FF默认为1.12em，通过p的margin-bottom属性设*/
+/*p默认为块状显示，要清除段间距，一般可以设置*/
+
+ p {
+margin-top:0;
+margin-bottom:0;
+ }
+
+/*3、标题样式*/
+/*h1~h6默认加粗显示：font-weight:bold;。*/
+/*默认大小请参上表*/
+/*还有是这样的写的*/
+
+/* h1 {font-size:xx-large;}
+ h2 {font-size:x-large;}
+ h3 {font-size:large;}
+ h4 {font-size:medium;}
+ h5 {font-size:small;}
+ h6 {font-size:x-small;}*/
+
+/*个大浏览器默认字体大小为16px，即等于medium，h1~h6元素默认以块状显示字体显示为粗体，要清除标题样式，一般可以设置*/
+/*
+hx {
+font-weight:normal;
+font-size:value;
+ }*/
+
+/*4、列表样式*/
+/*IE默认为40px，通过ul、ol的margin属性设置*/
+/*FF默认为40px，通过ul、ol的padding属性设置*/
+/*dl无缩进，但起内部的说明元素dd默认缩进40px，而名称元素dt没有缩进。*/
+/*要清除列表样式，一般可以设置*/
+
+ul, ol, dd {
+list-style-type:none;
+margin-left:0;
+padding-left:0;
+}
+
+/*元素居中*/
+/*IE默认为text-align:center;*/
+/*FF默认为margin-left:auto;margin-right:auto;*/
+
+/*5、超链接样式a 样式默认带有下划线，显示颜色为蓝色，被访问过的超链接变紫色，要清除链接样式，一般可以设置*/
+
+a {
+text-decoration:none;
+/*color:#colorname;*/
+}
+
+/*6、鼠标样式*/
+/*IE默认为cursor:hand;*/
+/*FF默认为cursor:pointer;该声明在IE中也有效*/
+
+/*7、图片链接样式*/
+/*IE默认为紫色2px的边框线*/
+/*FF默认为蓝色2px的边框线*/
+/*要清除图片链接样式，一般可以设置*/
+
+img {
+border:0;
+}

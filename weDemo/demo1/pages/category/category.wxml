@@ -1,0 +1,13 @@
+<!--pages/category/category.wxml-->
+<view class="main">
+  <view class="left">
+    <view class=" {{onItem == 0 ?'check':''}}" bindtap="clickItem" data-index="0" id="abc">果味</view>
+    <view class=" {{onItem == 1 ?'check':''}}" bindtap="clickItem" data-index="1" id="fds">果味</view>
+    <view class=" {{onItem == 2 ?'check':''}}" bindtap="clickItem" data-index="2" id="cxz">果味</view>
+    <view class=" {{onItem == 3 ?'check':''}}" bindtap="clickItem" data-index="3" id="rer">果味</view>
+    <view class=" {{onItem == 4 ?'check':''}}" bindtap="clickItem" data-index="4" id="dgf">果味</view>
+  </view>
+  <view class="right">
+    <image src='/image/c1.png'></image>
+  </view>
+</view>

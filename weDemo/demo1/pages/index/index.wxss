@@ -1,0 +1,50 @@
+/**index.wxss**/
+swiper {
+    height: 421.5rpx;
+}
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+.select-title{
+  text-align: center;
+  width: 100%;
+  height: 40rpx;
+  padding: 30rpx 0;
+  color: #AB956D;
+}
+
+.select-bottom,.select-top{
+    width: 100%;
+    height: 375rpx;
+}
+
+.select-child{
+ display: inline-block;
+  width: 375rpx;
+  height: 375rpx;
+}
+.select-top navigator,.select-top navigator image,.select-bottom navigator,.select-bottom navigator image{
+  width: 100%;
+  height: 100%;
+}
+.new-box{
+  padding: 0 40rpx;
+}
+.box-item{
+  display: inline-block;
+  width: 325rpx;
+  height: 325rpx;
+  margin:0 20rpx 20rpx 0;
+  border-radius: 10px;
+  text-align: center;
+  background: #f5f6f5;
+}
+.box-item:nth-child(2n){
+  margin-right: 0;
+}
+.box-item image{
+   width: 175rpx;
+   height: 175rpx;
+   margin: 20rpx 0 10rpx;
+}

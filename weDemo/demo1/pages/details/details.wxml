@@ -1,0 +1,33 @@
+<!--pages/details/details.wxml-->
+<view class='good-box'>
+  <image src="{{imgUrl}}" class='goot-img'></image>
+  <view class="cart-icon {{scaleCart?'scaleCart':''}}">
+    <image src='/image/cart2.png' bindtap='toCart'></image>
+    <text class="cart-num" wx:if="{{hasCarts}}">{{totalNum}}</text> 
+  </view>
+  <view class='addCart'>
+    <text class='cartMinus'>-</text>
+    <text class='cartNum'>数量:{{num}}</text>
+    <text class='cartAdd'>+</text>
+    <image src="/image/cart1.png" bindtap='addCart' class="addCart-img"></image> 
+    <image src="/image/cart1.png" bindtap='addCart' class="to-carts-icon"></image> 
+  </view>
+  <view class="cart-stock">有货</view>
+  <view class="cart-title">{{productName}}</view>
+  <view class="cart-price">￥ {{price}}</view>
+</view>
+
+
+<view>
+  <view class='tab-cont'>
+    <view class="tab-item {{onItem == 0 ?'check':''}}" bindtap="clickItem" data-index="0" id="abc">商品详情</view>
+    <view class="tab-item {{onItem == 1 ?'check':''}}" bindtap="clickItem" data-index="1" id="def">产品参数</view>
+    <view class="tab-item {{onItem == 2 ?'check':''}}" bindtap="clickItem" data-index="2" id="ghi">售后保障</view>
+  </view>
+  
+  <view class='tab-conten'>
+    <view wx:if="{{onItem==0}}">商品详情</view>
+    <view wx:if="{{onItem==1}}">这里是梨花带雨详情。</view>
+    <view wx:if="{{onItem==2}}">不支持退货</view>
+  </view>
+</view>

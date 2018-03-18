@@ -1,0 +1,26 @@
+/* pages/category/category.wxss */
+page,.main{
+  height: 100%;
+}
+.main{
+  display: flex;
+}
+.left{
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.left view{
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+}
+.check{
+  color: #bcaa8a;
+  border-left: 5rpx solid #bcaa8a;
+}
+.right{
+
+}

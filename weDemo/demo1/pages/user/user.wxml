@@ -1,0 +1,14 @@
+<!--pages/user/user.wxml-->
+<view class='user'>
+  <image src='{{avatarUrl}}'></image> 
+  <text>{{nickName}}</text>
+  <text class='about'>关于我们</text>
+</view>
+<view class='address-box'>
+  <view class='address-manage' bindtap='toAddress'>地址管理</view>
+  <view class='address-list'>
+    <view class="list-item">{{address.name}}</view>
+    <view class="list-item">{{address.phone}}</view>
+    <view class="list-item">{{address.detail}}</view>
+  </view> 
+</view>

@@ -1,0 +1,124 @@
+/* pages/details/details.wxss */
+.good-box{
+  text-align: center;
+  color: #454552;
+  border-bottom: 30rpx solid #ededed;
+  position:relative;
+}
+.goot-img{
+  width: 300rpx;
+  height: 300rpx;
+  margin: 105rpx 0;
+}
+.cart-icon{
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+  width: 75rpx;
+  height: 75rpx;
+}
+.cart-icon image{
+    width: 100%;
+    height: 100%;
+}
+@-webkit-keyframes scaleCart {
+  50%{
+     -webkit-transform: scale(1.2);
+  }
+}
+
+@keyframes scaleCart {
+  50%{
+    transform: scale(1.2)
+  }
+}
+@-webkit-keyframes toCart{
+  0%{
+      right:200rpx;
+      top:430rpx;
+      -webkit-transform: scale(4);
+  }
+}
+
+@keyframes toCart{
+  0%{
+      right:200rpx;
+      top:430rpx;
+      transform: scale(4);
+  }
+}
+.scaleCart{
+  -webkit-animation: scaleCart .3s ease;
+  animation: scaleCart .3s ease;
+}
+.cart-num{
+  position:absolute;
+  left: -15rpx;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 50%;
+  background: #AB956D;
+  color: #fff;
+  font-size: 24rpx;
+}
+.addCart{
+  position: relative;
+  width: 80%;
+  left: 10%;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 50rpx;
+  margin-bottom: 60rpx;
+  box-sizing: border-box;
+  border-radius: 50rpx;
+  background: #AB956D;
+  color: #fff;
+  font-size: 32rpx;
+  text-align: left;
+}
+.addCart-img{
+  position: absolute;
+  right: 50rpx;
+  top: 28rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+.to-carts-icon{
+  position: absolute;
+  right: 50rpx;
+  top: 28rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  opacity: .6;
+  -webkit-animation: toCart .3s ease-out;
+  animation: toCart .3s ease-out;
+}
+.addCart .cartMinus,.addCart .cartNum,.addCart .cartAdd{
+  padding: 0 35rpx;
+}
+.cart-stock,.cart-title,.cart-price{
+  margin-bottom: 20rpx;
+}
+.cart-title,.cart-price{
+  font-size: 36rpx;
+}
+.tab-cont{
+  display: flex;
+  justify-content: center;
+}
+.tab-item{
+  width: 33.3%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #ededed;
+}
+.tab-conten{
+  padding: 40rpx;
+}
+.tab-cont .check{
+  color: #bcaa8a;
+  border-bottom: 5rpx solid #bcaa8a;
+}

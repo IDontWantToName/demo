@@ -1,0 +1,44 @@
+/* pages/user/user.wxss */
+.user{
+  width: 100%;
+  height: 160rpx;
+  background-color: #AB956D;
+  color: #fff;
+  line-height: 100rpx;
+  box-sizing: border-box;
+  padding:30rpx 30rpx 30rpx 150rpx;
+}
+.about{
+  float: right;
+}
+.user image{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+}
+
+.address-box{
+  width: 100%;
+  
+  border-bottom: 20rpx solid  #ededed;
+}
+.address-manage{
+  text-align: center;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #ededed;
+}
+.address-list{
+  padding: 0 30rpx;
+  width: 100%;
+}
+.list-item{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #ededed;
+}

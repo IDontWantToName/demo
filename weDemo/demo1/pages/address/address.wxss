@@ -1,0 +1,14 @@
+/* pages/address/address.wxss */
+.address-list{
+  padding: 0 30rpx;
+  width: 100%;
+}
+.list-item{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #ededed;
+}
+.address-list button{
+  margin:30rpx 60rpx 0 0;
+}
